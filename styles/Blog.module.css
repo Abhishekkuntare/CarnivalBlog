@@ -1,0 +1,32 @@
+.main {
+  margin-top: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.blog_item_title {
+  cursor: pointer;
+}
+.blog_home {
+  text-align: start;
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(255, 255, 255);
+}
+.blog_home:hover {
+  border: 1px solid rgb(29, 29, 29);
+}
+
+@media (max-width: 600px) {
+  .blog_home {
+    width: 300px;
+  }
+}

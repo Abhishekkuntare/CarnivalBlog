@@ -1,0 +1,123 @@
+.container {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  height: 600px;
+  background: #202020;
+  border-radius: 12px;
+  box-shadow: 10px 10px 39px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 39px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 39px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact_title {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.024);
+  margin-bottom: 20px;
+}
+.mb3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: start;
+  width: 400px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #131313;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.textarea {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #131313;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Indie Flower", cursive;
+  overflow: hidden;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.mb3 p {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.form_control {
+  background: #131313;
+  width: 250px;
+  color: white;
+  border: none;
+  font-family: "Indie Flower", cursive;
+  font-size: 16px;
+  outline: none;
+}
+.star {
+  color: #535353;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 130px;
+  border-radius: 10px;
+  background: #705df2;
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  margin-top: 30px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #8775fb;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 380px;
+  }
+  .contact_title > h1 {
+    font-size: 20px;
+  }
+  .mb3,
+  .textarea {
+    width: 336px;
+  }
+  .mb3 p {
+    padding: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    width: 300px;
+  }
+  .mb3,
+  .textarea {
+    width: 286px;
+  }
+  .mb3 p {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

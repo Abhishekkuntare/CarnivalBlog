@@ -1,0 +1,19 @@
+
+Step1: Collect all the files from the blogdata directory
+Step2 : Itrate through and display them
+
+(for parsed the data use JSON.parse use this syntax.
+
+import * as fs from "fs";
+
+export default function handler(req, res) {
+  fs.readFile("blogdata/how-to-learn-nextjs.json", "utf-8", (err, data) => {
+    res.status(200).json(JSON.parse(data));
+  });
+}
+)
+
+
+use server side rendering in blog.js folder 
+use server side rendering use in [slug.js]
+
