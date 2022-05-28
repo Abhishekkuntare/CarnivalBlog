@@ -11,7 +11,6 @@ const contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(name, email, phone, desc);
     const data = { name, email, phone, desc };
 
     // calling the api
@@ -112,7 +111,7 @@ const contact = () => {
           />
         </div>
         <div className={styles.textarea}>
-          <div class={styles.mb3}>
+          <div className={styles.mb3}>
             <p>
               Message <span className={styles.star}>*</span>
             </p>
