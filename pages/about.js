@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/About.module.css";
 
-const about = () => {
+const About = () => {
   return (
     <div className={styles.container}>
       <h1> Carnival </h1>
@@ -41,4 +41,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

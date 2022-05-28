@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styles from "../styles/Blog.module.css";
 import Link from "next/link";
 
-const blog = (props) => {
-  const [blogs, setBlogs] = useState(props.allBlogs);
+const Blog = (props) => {
+  const [blogs] = useState(props.allBlogs);
 
   return (
     <div className={styles.container}>
@@ -35,4 +35,4 @@ export async function getServerSideProps() {
   };
 }
 
-export default blog;
+export default Blog;
